@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class book extends AppCompatActivity {
+public class confirmpage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_book);
+        setContentView(R.layout.activity_confirmpage);
 
-        Button bookbtnconf = findViewById(R.id.bookbtn2);
+        Button confirmBtn = findViewById(R.id.confbtn);
 
-        bookbtnconf.setOnClickListener(new View.OnClickListener() {
+        confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(book.this, confirmpage.class));
+                startActivity(new Intent(confirmpage.this, MainActivity.class));
             }
         });
     }
