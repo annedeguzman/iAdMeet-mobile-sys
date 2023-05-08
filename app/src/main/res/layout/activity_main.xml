@@ -4,15 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_page_bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="162dp"
-        android:layout_height="23dp"
-        android:text="Hello World! by Joanne"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header_img" />
+
+    <ImageView
+        android:id="@+id/bottomnav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:srcCompat="@drawable/bottom_nav_bar" />
+
+    <ImageButton
+        android:id="@+id/aboutUsBtn"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:alpha="0.0"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/ic_action_profile" />
+
+    <ImageButton
+        android:id="@+id/bookNowBtn"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:alpha="0.0"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/ic_action_profile" />
+
+    <ImageButton
+        android:id="@+id/contactUsBtn"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:alpha="0.0"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/ic_action_profile" />
+
+    <ImageButton
+        android:id="@+id/profileBtn"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:alpha="0.0"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/ic_action_profile" />
+
+    <Button
+        android:id="@+id/bookMainBtn"
+        android:layout_width="216dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#D64B4B"
+        android:text="Book Now"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F1F1F1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
