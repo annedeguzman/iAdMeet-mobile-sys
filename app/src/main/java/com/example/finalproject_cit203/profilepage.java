@@ -7,47 +7,47 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class aboutus extends AppCompatActivity {
+public class profilepage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aboutus);
+        setContentView(R.layout.activity_profilepage);
 
-        ImageButton button2 = findViewById(R.id.homeBtnAbt);
-        ImageButton button3 = findViewById(R.id.aboutBtnAbt);
-        ImageButton button4 = findViewById(R.id.bookBtnAbt);
-        ImageButton button5 = findViewById(R.id.contBtnAbt);
-        ImageButton button6 = findViewById(R.id.profileBtnAbt);
+        ImageButton button2 = findViewById(R.id.homeBtnProf);
+        ImageButton button3 = findViewById(R.id.aboutBtnProf);
+        ImageButton button4 = findViewById(R.id.bookBtnProf);
+        ImageButton button5 = findViewById(R.id.contBtnProf);
+        ImageButton button6 = findViewById(R.id.profileBtnProf);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(aboutus.this, MainActivity.class));
+                startActivity(new Intent(profilepage.this, MainActivity.class));
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(aboutus.this, aboutus.class));
+                startActivity(new Intent(profilepage.this, aboutus.class));
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(aboutus.this, book.class));
+                startActivity(new Intent(profilepage.this, book.class));
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(aboutus.this, contactpage.class));
+                startActivity(new Intent(profilepage.this, contactpage.class));
             }
         });
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(aboutus.this, profilepage.class));
+                startActivity(new Intent(profilepage.this, profilepage.class));
             }
         });
     }
